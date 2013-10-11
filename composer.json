@@ -1,0 +1,23 @@
+{
+    "name": "pscheit/one-pager-minimock",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@ps-webforge.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "webforge/minimock": "dev-master",
+        "guzzle/guzzle": "3.5.*"
+    },
+    "require-dev": {
+        "webforge/testplate": "1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "OnePager": ["lib/", "tests/"]
+        }
+    }
+}
