@@ -27,17 +27,22 @@ class AcceptanceTest extends \Webforge\Code\Test\Base implements HTMLTesting {
       ->css('body')->count(1)
         ->css('nav.navbar')->count(1)->end()
         ->css('div.container.features')->count(1)
-          ->css('.featurette:eq(0)')->count(1)->hasAttribute('id', 'about')
+          ->css('div.featurette:eq(0)')->count(1)->hasAttribute('id', 'about')
             ->css('img')->hasClass('pull-right')->end()
           ->end()
-          ->css('.featurette:eq(1)')->count(1)->hasAttribute('id', 'services')
+          ->css('div.featurette:eq(1)')->count(1)->hasAttribute('id', 'services')
             ->css('img')->hasClass('pull-left')->end()
           ->end()
-          ->css('.featurette:eq(2)')->count(1)->hasAttribute('id', 'contact')
+          ->css('div.featurette:eq(2)')->count(1)->hasAttribute('id', 'contact')
             ->css('img')->hasClass('pull-right')->end()
           ->end()
           ->end()
         ->end()
     ;
+  }
+
+  protected function onNotSuccessfulTest(\Exception $e) {
+    $this->guzzle->debug();
+    throw $e;
   }
 }

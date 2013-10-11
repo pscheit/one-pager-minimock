@@ -5,8 +5,12 @@ use Webforge\Minimock\Container;
 $boot = require __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'bootstrap.php';
 $container = new Container($boot->getPackage(), $boot->getWebforge()->getVendorPackage('webforge/minimock'));
 $engine = $container->getTemplateEngine();
+$models = $container->getJSONModelReader();
 
-print $engine->render('one-pager/layout', $model = (object) array(
+print $engine->render('one-pager/layout', $models->get('one-pager/features'));
+
+/*
+$model = (object) array(
   'features'=>array(
     (object) array(
       'id'=>'about',
@@ -42,3 +46,5 @@ print $engine->render('one-pager/layout', $model = (object) array(
     )
   )
 ));
+
+*/
