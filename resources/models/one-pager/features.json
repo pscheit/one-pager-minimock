@@ -1,0 +1,34 @@
+{
+    "features": [
+        {
+            "id": "about",
+            "img": {
+                "src": "http://placecreature.com/500/500",
+                "class": "pull-right"
+            },
+            "headline": "This First Heading",
+            "caption": "Will Catch Your Eye",
+            "text": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo."
+        },
+        {
+            "id": "services",
+            "img": {
+                "src": "http://placecreature.com/500/500",
+                "class": "pull-left"
+            },
+            "headline": "The Second Heading",
+            "caption": "Is Pretty Cool Too.",
+            "text": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo."
+        },
+        {
+            "id": "contact",
+            "img": {
+                "src": "http://placecreature.com/500/500",
+                "class": "pull-right"
+            },
+            "headline": "The Third Heading",
+            "caption": "Will Seal the Deal.",
+            "text": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo."
+        }
+    ]
+}
